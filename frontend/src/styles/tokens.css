@@ -1,0 +1,157 @@
+/* Petalo Design System Tokens — Exact Match to Live Petalo Demo */
+
+:root,
+[data-theme="light"] {
+  --font: "Urbanist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bg-app: #f2f0ec;
+  --bg-surface: #fbfaf8;
+  --bg-surface-2: #f4f2ee;
+  --bg-surface-hover: #ebe8e3;
+  --bg-input: #f4f2ee;
+  --bg-receipt: #fffdf8;
+  --text-receipt: #24201c;
+
+  --side: #1e2221;
+  --side-2: #262b29;
+  --side-text: #eef0ee;
+  --side-muted: #a7afab;
+  --side-line: rgba(255, 255, 255, 0.08);
+
+  --border-subtle: rgba(40, 32, 26, 0.09);
+  --border-strong: rgba(40, 32, 26, 0.16);
+
+  --text-primary: #1d1a18;
+  --text-secondary: #5f5853;
+  --text-muted: #8f8780;
+
+  --accent-coral: #ff7a59;
+  --accent-coral-hover: #ff6944;
+  --accent-coral-ink: #2a0d05;
+  --accent-coral-soft: #ffe3d9;
+
+  --green: #1b6b44;
+  --green-soft: #d8f1e3;
+  --amber: #835000;
+  --amber-soft: #fbecc6;
+  --blue: #1c5996;
+  --blue-soft: #dcebfa;
+  --red: #b3241a;
+  --red-soft: rgba(179, 36, 26, 0.12);
+
+  /* Tinted Bento Cards */
+  --bento-brown: #ffe0d4;
+  --bento-olive: #fbecc6;
+  --bento-slate: #dcebfa;
+  --bento-forest: #d8f1e3;
+  --bento-pill-bg: rgba(255, 255, 255, 0.58);
+
+  --shadow-card: 0 1px 2px rgba(40, 32, 26, 0.05), 0 12px 32px -20px rgba(40, 32, 26, 0.28);
+  --shadow-modal: 0 2px 6px rgba(40, 32, 26, 0.08), 0 30px 60px -24px rgba(40, 32, 26, 0.38);
+
+  --r-card: 20px;
+  --r-ctl: 12px;
+  --side-w: 252px;
+  --frame: 12px;
+}
+
+[data-theme="dark"] {
+  --bg-app: #121413;
+  --bg-surface: #1a1d1c;
+  --bg-surface-2: #212524;
+  --bg-surface-hover: #262a29;
+  --bg-input: #212524;
+  --bg-receipt: #f7f3ea;
+  --text-receipt: #24201c;
+
+  --side: #191c1b;
+  --side-2: #222625;
+  --side-text: #eef0ee;
+  --side-muted: #aeb3b0;
+  --side-line: rgba(255, 255, 255, 0.07);
+
+  --border-subtle: rgba(255, 255, 255, 0.075);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  --text-primary: #f2f1ed;
+  --text-secondary: #aeb3b0;
+  --text-muted: #7c827f;
+
+  --accent-coral: #ff8a6b;
+  --accent-coral-hover: #ff9b80;
+  --accent-coral-ink: #2a0d05;
+  --accent-coral-soft: #3d241c;
+
+  --green: #72d6a2;
+  --green-soft: rgba(70, 180, 126, 0.16);
+  --amber: #f3c769;
+  --amber-soft: rgba(217, 164, 58, 0.16);
+  --blue: #93c3f3;
+  --blue-soft: rgba(95, 155, 214, 0.16);
+  --red: #ff9b90;
+  --red-soft: rgba(229, 103, 90, 0.16);
+
+  --bento-brown: #47291f;
+  --bento-olive: #43381c;
+  --bento-slate: #1f3448;
+  --bento-forest: #1f3a2c;
+  --bento-pill-bg: rgba(255, 255, 255, 0.09);
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.35), 0 16px 36px -22px rgba(0, 0, 0, 0.8);
+  --shadow-modal: 0 2px 6px rgba(0, 0, 0, 0.4), 0 30px 60px -24px rgba(0, 0, 0, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-coral);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+}
